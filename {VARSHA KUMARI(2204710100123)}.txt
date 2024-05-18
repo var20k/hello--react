@@ -1,0 +1,1101 @@
+1. Write a Javascript program to accept two integers and check whether they are equal or not. 
+Test Data : 15 15
+Expected Output :
+Number1 and Number2 are equal
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          function checkEquality(num1, num2) {
+    if (num1 === num2) {
+        return "Number1 and Number2 are equal";
+    } else {
+        return "Number1 and Number2 are not equal";
+    }
+}
+
+var number1 = 15;
+var number2 = 15;
+
+console.log(checkEquality(number1, number2));
+    </script>
+    
+</html>
+
+ 2. Write a Javascript program to check whether a given number is even or odd. 
+ Test Data : 15
+ Expected Output :
+ 15 is an odd integer
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           function checkEquality(num) {
+    if (num ==15%2) {
+        return "15 is an even integer";
+    } else {
+        return "15 is an odd integer";
+    }
+}
+     var number = 15;
+    console.log(checkEquality(number));
+    </script>
+    
+</html>
+
+ 3. Write a Javascript program to check whether a given number is positive , negative or zero. 
+ Test Data : 15
+ Expected Output :
+ 15 is a positive number
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          function checkEquality(num) {
+    if (num >0) {
+        return "15 is a positive number";
+    } else {
+        return "15 is a nagitive number";
+    }
+}
+     var number = 15;
+    console.log(checkEquality(number));
+    </script>
+    
+</html>
+
+ 4. Write a Javascript program to find whether a given year is a leap year or not.  -->
+ Test Data : 2016 
+ Expected Output : 
+ 2016 is a leap year.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          function isLeapYear(year) {
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+var givenYear = 2016;
+
+if (isLeapYear(givenYear)) {
+    console.log(givenYear + " is a leap year.");
+} else {
+    console.log(givenYear + " is not a leap year.");
+}
+</script>
+    
+</html>
+
+</html>
+ 5. Write a Javascript program to read the age of a candidate and determine whether it is eligible for casting his/her own vote.  -->
+ Test Data : 21 
+ Expected Output : 
+ Congratulation! You are eligible for casting your vote. 
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         
+function checkEligibility(age) {
+    if (age >= 18) {
+        return "Congratulations! You are eligible for casting your vote.";
+    } else {
+        return "Sorry, you are not eligible to vote yet.";
+    }
+}
+
+var candidateAge = 21;
+
+
+console.log(checkEligibility(candidateAge));
+</script>
+    
+</html>
+
+6. Write a Javascript program to read the value of an integer m and display the value of n is 1 when m is larger than 0, print 
+  n=0 when m is 0 and -1 when m is less than 0.  
+ Test Data : -5
+ Expected Output : 
+ The value of n = -1 
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function calculateN(m) {
+    if (m > 0) {
+        return 1;
+    } else if (m === 0) {
+        return 0;
+    } else {
+        return -1;
+    }
+}
+
+var mValue = -5;
+
+var nValue = calculateN(mValue);
+console.log("The value of n =", nValue);
+</script>
+    
+</html>
+
+7. Write a Javascript program to accept the height of a person in centimeter and categorize the person according to their height. 
+let Dwarf: Less than 150 cm
+Medium: 150 cm to 180 cm 
+Tall: Greater than 180 cm
+Test Data : 135
+Expected Output :
+The person is Dwarf.
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function categorizeHeight(height) {
+    if (height < 150) {
+        return "Dwarf";
+    } else if (height >= 150 && height <= 180) {
+        return "Medium";
+    } else {
+        return "Tall";
+    }
+}
+
+
+var height = 135;
+
+
+var category = categorizeHeight(height);
+
+
+console.log("The person is " + category + ".");
+</script>
+    
+</html> 
+
+8. Write a Javascript program to find the largest of three numbers. 
+Test Data : 12 25 52
+Expected Output :
+1st Number = 12,        2nd Number = 25,        3rd Number = 52
+The 3rd Number is the greatest among three
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function findLargestNumber(num1, num2, num3) {
+    if (num1 >= num2 && num1 >= num3) {
+        return num1;
+    } else if (num2 >= num1 && num2 >= num3) {
+        return num2;
+    } else {
+        return num3;
+    }
+}
+
+
+var num1 = 12;
+var num2 = 25;
+var num3 = 52;
+
+var largestNumber = findLargestNumber(num1, num2, num3);
+
+console.log("1st Number =", num1 + ",", "2nd Number =", num2 + ",", "3rd Number =", num3);
+console.log("The", largestNumber + "rd Number is the greatest among three.");  
+</script>
+    
+</html> 
+
+9. Write a Javascript program to accept a coordinate point in a XY coordinate system and determine in 
+which quadrant the coordinate point lies. 
+Test Data : 7 9
+Expected Output :
+The coordinate point (7,9) lies in the First quadrant.
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function determineQuadrant(x, y) {
+    if (x > 0 && y > 0) {
+        return "First";
+    } else if (x < 0 && y > 0) {
+        return "Second";
+    } else if (x < 0 && y < 0) {
+        return "Third";
+    } else if (x > 0 && y < 0) {
+        return "Fourth";
+    } else {
+        return "On the axis or origin";
+    }
+}
+
+var x = 7;
+var y = 9;
+
+var quadrant = determineQuadrant(x, y);
+
+console.log("The coordinate point (" + x + "," + y + ") lies in the " + quadrant + " quadrant.");  
+</script>
+    
+</html> 
+
+10. Write a Javascript program to find the eligibility of admission for a professional 
+course based on the following criteria: 
+Eligibility Criteria : Marks in Maths >=65 and Marks in Phy >=55 and Marks in Chem>=50
+ and Total in all three subject >=170 or Total in Maths and Physics >=140 
+-----------------------------------------------------------------------------
+Input the marks obtained in Physics :65 Input the marks obtained in Chemistry :51 Input 
+the marks obtained in Mathematics :72 Total marks of Maths, Physics and Chemistry : 188
+ Total marks of Maths and Physics : 137 The candidate is not eligible.
+Expected Output :
+The candidate is not eligible for admission.
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkEligibility(math, phy, chem, total, totalMathsPhysics) {
+    if (math >= 65 && phy >= 55 && chem >= 50 && total >= 170) {
+        return true;
+    } else if (math + phy >= 140 && totalMathsPhysics >= 140) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+var math = 72;
+var phy = 65;
+var chem = 51;
+var total = 188;
+var totalMathsPhysics = 137;
+
+var isEligible = checkEligibility(math, phy, chem, total, totalMathsPhysics);
+
+if (isEligible) {
+    console.log("The candidate is not eligible for admission.");
+} else {
+    console.log("The candidate is eligible for admission.");
+}
+       </script>
+</html> 
+
+11. Write a Javascript program to calculate the root of a Quadratic
+ Equation and find out that it is real,imaginary or complex. 
+Test Data : 1 5 7
+Expected Output :
+Root are imaginary;
+No solution.
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateRoots(a, b, c) {
+    var discriminant = b * b - 4 * a * c;
+
+    if (discriminant > 0) {
+        var root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+        var root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+        return [root1, root2, "Real"];
+    } else if (discriminant === 0) {
+        var root = -b / (2 * a);
+        return [root, "Real"];
+    } else {
+        return ["Imaginary"];
+    }
+}
+
+var a = 1;
+var b = 5;
+var c = 7;
+
+var roots = calculateRoots(a, b, c);
+
+if (roots[2] === "Real") {
+    console.log("Roots are real; Root 1 =", roots[0], ", Root 2 =", roots[1]);
+} else {
+    console.log("Roots are imaginary; No solution.");
+}
+       </script>
+</html> 
+
+12. Write a Javascript program to read roll no and marks
+ of three subjects and calculate the total, percentage and division. 
+Test Data :
+Input the Roll Number of the student :784
+Input the marks of Physics, Chemistry and Computer Application : 70 80 90
+Expected Output :
+Roll No : 784
+Marks in Physics : 70
+Marks in Chemistry : 80
+Marks in Computer Application : 90
+Total Marks = 240
+Percentage = 80.00
+Division = First
+ 
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateResult(physics, chemistry, computer) {
+    var totalMarks = physics + chemistry + computer;
+    var percentage = (totalMarks / 300) * 100;
+    var division;
+
+    if (percentage >= 60) {
+        division = "First";
+    } else if (percentage >= 50) {
+        division = "Second";
+    } else if (percentage >= 40) {
+        division = "Third";
+    } else {
+        division = "Fail";
+    }
+
+    return [totalMarks, percentage.toFixed(2), division];
+}
+
+var rollNo = 784;
+var physicsMarks = 70;
+var chemistryMarks = 80;
+var computerMarks = 90;
+
+var result = calculateResult(physicsMarks, chemistryMarks, computerMarks);
+
+console.log("Roll No :", rollNo);
+console.log("Marks in Physics :", physicsMarks);
+console.log("Marks in Chemistry :", chemistryMarks);
+console.log("Marks in Computer Application :", computerMarks);
+console.log("Total Marks =", result[0]);
+console.log("Percentage =", result[1]);
+console.log("Division =", result[2]);
+       </script>
+</html>
+
+13. Write a Javascript program to read temperature in centigrade and display a suitable message according to temperature state below : 
+Temp < 0 then Freezing weather
+Temp 0-10 then Very Cold weather
+Temp 10-20 then Cold weather
+Temp 20-30 then Normal in Temp
+Temp 30-40 then Its Hot
+Temp >=40 then Its Very Hot
+Test Data :
+42
+Expected Output :
+Its very hot.
+ 
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getTemperatureState(temp) {
+    if (temp < 0) {
+        return "Freezing weather";
+    } else if (temp >= 0 && temp <= 10) {
+        return "Very Cold weather";
+    } else if (temp > 10 && temp <= 20) {
+        return "Cold weather";
+    } else if (temp > 20 && temp <= 30) {
+        return "Normal in Temp";
+    } else if (temp > 30 && temp <= 40) {
+        return "Its Hot";
+    } else {
+        return "Its Very Hot";
+    }
+}
+
+var temperature = 42;
+
+var temperatureState = getTemperatureState(temperature);
+
+console.log(temperatureState);
+       </script>
+</html>
+
+14. Write a Javascript program to check whether a triangle is Equilateral, Isosceles or Scalene. 
+Test Data :
+50 50 60
+Expected Output :
+This is an isosceles triangle.
+ 
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkTriangleType(side1, side2, side3) {
+    if (side1 === side2 && side2 === side3) {
+        return "Equilateral";
+    } else if (side1 === side2 || side1 === side3 || side2 === side3) {
+        return "Isosceles";
+    } else {
+        return "Scalene";
+    }
+}
+
+var side1 = 50;
+var side2 = 50;
+var side3 = 60;
+
+var triangleType = checkTriangleType(side1, side2, side3);
+
+console.log("This is an", triangleType.toLowerCase(), "triangle.");
+       </script>
+</html>
+
+15. Write a Javascript program to check whether a triangle can be formed by the given value for the angles. 
+Test Data :
+40 55 65
+Expected Output :
+The triangle is not valid.
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkTriangleValidity(angle1, angle2, angle3) {
+    var sumOfAngles = angle1 + angle2 + angle3;
+    return sumOfAngles === 180;
+}
+
+
+var angle1 = 40;
+var angle2 = 55;
+var angle3 = 65;
+
+var isValidTriangle = checkTriangleValidity(angle1, angle2, angle3);
+
+if (isValidTriangle) {
+    console.log("The triangle is valid.");
+} else {
+    console.log("The triangle is not valid.");
+}
+
+    </script>
+</body>
+</html>  
+
+16. Write a Javascript program to check whether a character is an alphabet, digit or special character. 
+Test Data :
+@
+Expected Output :
+This is a special character.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkCharacterType(char) {
+    if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z')) {
+        return "alphabet";
+    } else if (char >= '0' && char <= '9') {
+        return "digit";
+    } else {
+        return "special character";
+    }
+}
+
+var character = '@';
+
+var characterType = checkCharacterType(character);
+
+console.log("This is a", characterType + ".");
+
+    </script>
+</body>
+</html>
+
+17. Write a Javascript program to check whether an alphabet is a vowel or consonant. 
+Test Data :
+k
+Expected Output :
+The alphabet is a consonant.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkVowelOrConsonant(alphabet) {
+    var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+    if (vowels.includes(alphabet.toLowerCase())) {
+        return "vowel";
+    } else {
+        return "consonant";
+    }
+}
+
+
+var alphabet = 'k';
+
+var type = checkVowelOrConsonant(alphabet);
+
+console.log("The alphabet is a", type + ".");
+
+
+    </script>
+</body>
+</html>
+
+18. Write a Javascript program to calculate profit and loss on a transaction. 
+Test Data :
+500 700
+Expected Output :
+You can booked your profit amount : 200
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateProfitOrLoss(costPrice, sellingPrice) {
+    var profit = sellingPrice - costPrice;
+    return profit;
+}
+
+var costPrice = 500;
+var sellingPrice = 700;
+
+var profitAmount = calculateProfitOrLoss(costPrice, sellingPrice);
+
+if (profitAmount > 0) {
+    console.log("You can book your profit amount:", profitAmount);
+} else if (profitAmount < 0) {
+    console.log("You incurred a loss amount:", -profitAmount);
+} else {
+    console.log("No profit, no loss.");
+}
+
+    </script>
+</body>
+</html> 
+
+19. Write a program in Javascript to calculate and print the Electricity bill of a given customer. 
+The customer id, customer name and unit consumed by the user should be taken from the keyboard
+and display the total amount to pay to the customer. The charge are as follow : 
+
+Unit	                                Charge/unit
+upto 199	                            @3.20
+200 and above but less than 400	        @5.50
+400 and above but less than 600	        @8.80
+600 and above	                        @9.00
+If bill exceeds Rs.1000 then a surcharge of 15% will be charged and the minimum bill
+ should be of Rs. 200/-
+
+Test Data :
+1001
+800
+Expected Output :
+Customer ID NO :1001
+unit Consumed :800
+Amount Charges @Rs. 2.00 per unit : 1600.00
+Surchage Amount : 240.00
+Net Amount Paid By the Customer : 1840.00
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function calculateElectricityBill(customerId, unitsConsumed) {
+    var chargePerUnit;
+
+    if (unitsConsumed <= 199) {
+        chargePerUnit = 3.20;
+    } else if (unitsConsumed >= 200 && unitsConsumed < 400) {
+        chargePerUnit = 5.50;
+    } else if (unitsConsumed >= 400 && unitsConsumed < 600) {
+        chargePerUnit = 8.80;
+    } else {
+        chargePerUnit = 9.00;
+    }
+
+    var amountCharges = unitsConsumed * chargePerUnit;
+    var surchargeAmount = 0;
+
+    if (amountCharges > 1000) {
+        surchargeAmount = (amountCharges * 15) / 100;
+    }
+
+    var totalAmount = amountCharges + surchargeAmount;
+
+    // Ensuring minimum bill of Rs. 200
+    if (totalAmount < 200) {
+        totalAmount = 200;
+    }
+
+    return [amountCharges.toFixed(2), surchargeAmount.toFixed(2), totalAmount.toFixed(2)];
+}
+
+// Test data
+var customerId = 1001;
+var unitsConsumed = 800;
+
+// Calculate electricity bill
+var billDetails = calculateElectricityBill(customerId, unitsConsumed);
+
+// Output
+console.log("Customer ID NO:", customerId);
+console.log("unit Consumed:", unitsConsumed);
+console.log("Amount Charges @Rs. 2.00 per unit:", billDetails[0]);
+console.log("Surchage Amount:", billDetails[1]);
+console.log("Net Amount Paid By the Customer:", billDetails[2]);
+
+
+    </script>
+</body>
+</html>
+20. Write a program in Javascript to accept a grade and declare the equivalent description : 
+
+Grade	Description
+E	Excellent
+V	Very Good
+G	Good
+A	Average
+F	Fail
+Test Data :
+Input the grade :A
+Expected Output :
+You have chosen : Average
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function gradeDescription(grade) {
+    switch (grade.toUpperCase()) {
+        case 'E':
+            return "Excellent";
+        case 'V':
+            return "Very Good";
+        case 'G':
+            return "Good";
+        case 'A':
+            return "Average";
+        case 'F':
+            return "Fail";
+        default:
+            return "Invalid grade";
+    }
+}
+
+var inputGrade = 'A';
+
+var description = gradeDescription(inputGrade);
+
+console.log("You have chosen:", description);
+
+    </script>
+</body>
+</html>
+
+21. Write a program in Javascript to read any day number in integer and display day name of week in word . 
+Test Data :
+4
+Expected Output :
+Thursday
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function getDayName(dayNumber) {
+    switch (dayNumber) {
+        case 0:
+            return "Sunday";
+        case 1:
+            return "Monday";
+        case 2:
+            return "Tuesday";
+        case 3:
+            return "Wednesday";
+        case 4:
+            return "Thursday";
+        case 5:
+            return "Friday";
+        case 6:
+            return "Saturday";
+        default:
+            return "Invalid day number";
+    }
+}
+
+var dayNumber = 4;
+
+var dayName = getDayName(dayNumber);
+
+console.log(dayName);
+
+    </script>
+</body>
+</html>
+
+22. Write a program in Javascript to read any digit, display in the word(only till 10 digits). 
+Test Data :
+4
+Expected Output :
+Four
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function digitToWord(digit) {
+        switch (digit) {
+            case 0:
+                return "Zero";
+            case 1:
+                return "One";
+            case 2:
+                return "Two";
+            case 3:
+                return "Three";
+            case 4:
+                return "Four";
+            case 5:
+                return "Five";
+            case 6:
+                return "Six";
+            case 7:
+                return "Seven";
+            case 8:
+                return "Eight";
+            case 9:
+                return "Nine";
+            default:
+                return "Number out of range";
+        }
+    }
+    
+    var digit = 4;
+    
+    var word = digitToWord(digit);
+    
+    console.log(word);
+    
+    </script>
+    
+</body>
+</html>
+
+23. Write a program in Javascript to read any Month Number in integer and display Month name in the word. 
+Test Data :
+4
+Expected Output :
+April
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getMonthName(monthNumber) {
+    switch (monthNumber) {
+        case 1:
+            return "January";
+        case 2:
+            return "February";
+        case 3:
+            return "March";
+        case 4:
+            return "April";
+        case 5:
+            return "May";
+        case 6:
+            return "June";
+        case 7:
+            return "July";
+        case 8:
+            return "August";
+        case 9:
+            return "September";
+        case 10:
+            return "October";
+        case 11:
+            return "November";
+        case 12:
+            return "December";
+        default:
+            return "Invalid month number";
+    }
+}
+
+var monthNumber = 4;
+
+var monthName = getMonthName(monthNumber);
+
+console.log(monthName);
+
+    </script>
+    
+</body>
+</html>
+
+ 24. Write a program in Javascript to read any Month Number in integer and display the number of days for this month. 
+Test Data :
+7
+Expected Output :
+Month have 31 days
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getNumberOfDays(monthNumber) {
+    switch (monthNumber) {
+        case 1: // January
+        case 3: // March
+        case 5: // May
+        case 7: // July
+        case 8: // August
+        case 10: // October
+        case 12: // December
+            return 31;
+        case 4: // April
+        case 6: // June
+        case 9: // September
+        case 11: // November
+            return 30;
+        case 2: // February
+            return 28; // Assuming non-leap year for simplicity
+        default:
+            return "Invalid month number";
+    }
+}
+
+// Test data
+var monthNumber = 7;
+
+// Get number of days
+var numberOfDays = getNumberOfDays(monthNumber);
+
+// Output
+console.log("Month have", numberOfDays, "days");
+
+    </script>
+    
+</body>
+</html>
+
+25. Write a program in Javascript which is a Menu-Driven Program to compute the area of the various geometrical shape. 
+Test Data :
+1
+5
+Expected Output :
+The area is : 78.500000
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    function computeArea(choice, ...args) {
+    switch (choice) {
+        case 1: // Circle
+            return Math.PI * args[0] * args[0];
+        case 2: // Rectangle
+            return args[0] * args[1];
+        case 3: // Triangle
+            return 0.5 * args[0] * args[1];
+        default:
+            return "Invalid choice";
+    }
+}
+
+var choice = 1; // Circle
+var radius = 5;
+
+// Compute area
+var area = computeArea(choice, radius);
+
+// Output
+console.log("The area is:", area.toFixed(6));
+
+ </script>   
+</body>
+</html>
+
+26. Write a program in Javascript which is a Menu-Driven Program to perform a simple calculation. 
+Test Data :
+10
+2
+3
+Expected Output :
+The Multiplication of 10 and 2 is: 20
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    function performCalculation(choice, num1, num2) {
+    switch (choice) {
+        case 1: // Addition
+            return num1 + num2;
+        case 2: // Subtraction
+            return num1 - num2;
+        case 3: // Multiplication
+            return num1 * num2;
+        case 4: // Division
+            return num1 / num2;
+        default:
+            return "Invalid choice";
+    }
+}
+
+var choice = 3; // Multiplication
+var num1 = 10;
+var num2 = 2;
+
+var result = performCalculation(choice, num1, num2);
+
+console.log("The Multiplication of", num1, "and", num2, "is:", result);
+
+ </script>   
+</body>
+</html>
